@@ -135,7 +135,7 @@ module.exports.updatePostState = async(req, res) => {
     const userId = getUserIdFromToken(req.headers.token);
     const blog = await BlogModel.findById(id);
     if (!blog) {
-        return res.status(404).json({ message: "post not found" });
+        return res.status(404).json({ status: false, message: "Post does not exist" })
     }
     if (blog.author === userId) {
         blog.state = 'published';
@@ -167,6 +167,9 @@ module.exports.updatePost = async(req, res) => {
         sanitized_tags.push("post");
         const userId = getUserIdFromToken(req.headers.token);
         const blog = await BlogModel.findById(id);
+        if (!blog) {
+            return res.status(404).json({ status: false, message: "Post does not exist" })
+        }
 
         if (blog.author === userId) {
             blog.title = title;
@@ -196,7 +199,7 @@ module.exports.deletePost = async(req, res) => {
 
 
     if (!blog) {
-        return res.json({ status: false, message: "Post does not exist" })
+        return res.status(404).json({ status: false, message: "Post does not exist" })
     }
 
     if (blog.author === userId) {
@@ -234,6 +237,9 @@ module.exports.getUserPosts = async(req, res) => {
         .sort(sortOrder)
         .skip(startpage)
         .limit(postsPerPage);
+    if (!blog) {
+        return res.status(404).json({ status: false, message: "This user does not have any posts" })
+    }
 
     return res.status(200).json({ blog: blog });
 };
