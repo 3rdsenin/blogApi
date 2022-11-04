@@ -21,26 +21,26 @@ Base URL
     localhost:process.env.PORT
 
 User
-field 	data_type 	constraints
-id 	string 	required
-firstname 	string 	optional
-lastname 	string 	optional
-email 	string 	optional
-password 	string 	required
+field 	    data_type 	    constraints
+id 	    string 	    required
+firstname 	    string 	    optional
+lastname 	    string 	    optional
+email 	    string 	    optional
+password 	    string 	    required
 
 
 Blog
-field 	data_type 	constraints
-id 	string 	required
-timstamp 	date 	required
-state 	string 	required,default:draft
-title 	string 	required
-description  string 	required
-tags    array 	required
-body 	string 	required
-read_count 	number 	required
-read_time 	number 	required
-author  string  required
+field 	    data_type 	    constraints
+id 	    string 	    required
+timstamp 	    date 	    required
+state 	    string 	    required,default:draft
+title 	    string 	    required
+description     string 	    required
+tags        array 	    required
+body 	    string 	    required
+read_count 	    number 	    required
+read_time 	    number 	    required
+author      string      required
 
 
 API Endpoints
