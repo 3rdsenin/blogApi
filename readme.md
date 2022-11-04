@@ -18,7 +18,7 @@ Setup
 
 Base URL
 
-    localhost:process.enc.PORT
+    localhost:process.env.PORT
 
 User
 field 	data_type 	constraints
