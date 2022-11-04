@@ -140,7 +140,7 @@ module.exports.updatePostState = async(req, res) => {
     if (blog.author === userId) {
         blog.state = 'published';
         await blog.save();
-        return res.status(200).json({ blog });
+        return res.status(200).json({ message: "Post state update successfully to published", blog: blog });
     }
 
     return res.status(403).json({ message: "Unauthorized to update this post" });
