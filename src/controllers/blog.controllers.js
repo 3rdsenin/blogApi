@@ -134,6 +134,9 @@ module.exports.updatePostState = async(req, res) => {
     const { id } = req.params;
     const userId = getUserIdFromToken(req.headers.token);
     const blog = await BlogModel.findById(id);
+    if (!blog) {
+        return res.status(404).json({ message: "post not found" });
+    }
     if (blog.author === userId) {
         blog.state = 'published';
         await blog.save();
