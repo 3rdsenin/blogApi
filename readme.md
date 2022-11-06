@@ -47,6 +47,7 @@ Base URL
 ---
 
 API Endpoints
+```
 Signup User
 
     Route: auth/signup
@@ -64,7 +65,7 @@ Signup User
     Responses
 
 Success
-```
+---
 {
     "message": "Successfully created user",
     "user": {
