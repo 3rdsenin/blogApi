@@ -40,7 +40,7 @@ module.exports.createBlogPost = async(req, res) => {
             return res.status(200).json({ message: "successfully posted", blogpost: blogpost })
         }
 
-
+        return res.status(500).json({ message: "We encountered a problem creating the blog post, please try again" });
     } catch (error) {
         return res.status(409).json({ message: "An error occurred: " + error.message });
         console.log(error);
@@ -129,7 +129,7 @@ module.exports.getPublishedPost = async(req, res) => {
         return res.status(404).json({ message: "Please check post id and try again" });
     }
 };
-
+//update a post state
 module.exports.updatePostState = async(req, res) => {
     const { id } = req.params;
     const userId = getUserIdFromToken(req.headers.token);
@@ -150,7 +150,7 @@ module.exports.updatePostState = async(req, res) => {
 
 
 };
-
+//update a post
 module.exports.updatePost = async(req, res) => {
     try {
         const { id } = req.params;
@@ -190,7 +190,7 @@ module.exports.updatePost = async(req, res) => {
 
 
 };
-
+//delete a post
 module.exports.deletePost = async(req, res) => {
     const { id } = req.params;
     const userId = getUserIdFromToken(req.headers.token);
