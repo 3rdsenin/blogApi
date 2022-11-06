@@ -18,7 +18,7 @@ Setup
 
 Base URL
 
-    localhost:process.env.PORT
+    localhost:process.env.PORT || https://calm-pear-bee-gown.cyclic.app/
 
 ### User
 | field  |  data_type | constraints  |
@@ -400,5 +400,5 @@ Success
         }
     ]
 }
-
+```
 Link to static postman collection: https://www.getpostman.com/collections/46f573a4318bcf120f13
