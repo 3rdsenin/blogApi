@@ -24,13 +24,13 @@ Base URL
 | field  |  data_type | constraints  |
 |---|---|---|
 |  id |  String |  default: ObjectId |
-|  firstName | String  |  required | 
-|  lastName  | String |  required |
+|  firstname | String  |  required | 
+|  lastname  | String |  required |
 |  email     | String  |  required, unique, lowercase |
 |  password  | String |  required |
 
 
-### Article
+### Blog
 | field  |  data_type | constraints  |
 |---|---|---|
 |  id |  String |  default: ObjectId |
