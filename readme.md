@@ -20,28 +20,31 @@ Base URL
 
     localhost:process.env.PORT
 
-User
-field 	    data_type 	    constraints
-id 	    string 	    required
-firstname 	    string 	    optional
-lastname 	    string 	    optional
-email 	    string 	    optional
-password 	    string 	    required
+### User
+| field  |  data_type | constraints  |
+|---|---|---|
+|  id |  String |  default: ObjectId |
+|  firstName | String  |  required | 
+|  lastName  | String |  required |
+|  email     | String  |  required, unique, lowercase |
+|  password  | String |  required |
 
 
-Blog
-field 	    data_type 	    constraints
-id 	    string 	    required
-timstamp 	    date 	    required
-state 	    string 	    required,default:draft
-title 	    string 	    required
-description     string 	    required
-tags        array 	    required
-body 	    string 	    required
-read_count 	    number 	    required
-read_time 	    number 	    required
-author      string      required
+### Article
+| field  |  data_type | constraints  |
+|---|---|---|
+|  id |  String |  default: ObjectId |
+|  title |  String |  required |
+|  description | String  |  required |
+|  tags  |  Array |  required  |
+|  author     | String  |  required |
+|  timestamp |   Date |     |
+|  state |  String |  required, enum: ['draft', 'published'], default: 'draft' |
+|  read_count |  Number |  default: 0 |
+|  read_time |  Number |  required |
+|  body |  String |  required |
 
+---
 
 API Endpoints
 Signup User
@@ -61,7 +64,7 @@ Signup User
     Responses
 
 Success
-
+```
 {
     "message": "Successfully created user",
     "user": {
@@ -73,7 +76,7 @@ Success
         "__v": 0
     }
 }
-
+---
 
 Login User
 
