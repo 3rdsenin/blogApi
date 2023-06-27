@@ -401,15 +401,7 @@ Success
     ]
 }
 ```
-Link to postman collection: <div class="postman-run-button"
-data-postman-action="collection/fork"
-data-postman-visibility="public"
-data-postman-var-1="12566761-ea49629c-6fbf-423d-b75b-3e51bed6c3ca"
-data-postman-collection-url="entityId=12566761-ea49629c-6fbf-423d-b75b-3e51bed6c3ca&entityType=collection&workspaceId=f3d6aad4-30d0-4b94-8262-abe60a8510c2"></div>
-<script type="text/javascript">
-  (function (p,o,s,t,m,a,n) {
-    !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
-    !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+Link to postman collection: [![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/12566761-ea49629c-6fbf-423d-b75b-3e51bed6c3ca?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D12566761-ea49629c-6fbf-423d-b75b-3e51bed6c3ca%26entityType%3Dcollection%26workspaceId%3Df3d6aad4-30d0-4b94-8262-abe60a8510c2)
       (n = o.createElement("script")),
       (n.id = s+t), (n.async = 1), (n.src = m), n
     ));
