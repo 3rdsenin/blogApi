@@ -401,9 +401,4 @@ Success
     ]
 }
 ```
-Link to postman collection: [![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/12566761-ea49629c-6fbf-423d-b75b-3e51bed6c3ca?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D12566761-ea49629c-6fbf-423d-b75b-3e51bed6c3ca%26entityType%3Dcollection%26workspaceId%3Df3d6aad4-30d0-4b94-8262-abe60a8510c2)
-      (n = o.createElement("script")),
-      (n.id = s+t), (n.async = 1), (n.src = m), n
-    ));
-  }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
-</script>
+Link to postman collection: [![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/12566761-ea49629c-6fbf-423d-b75b-3e51bed6c3ca?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D12566761-ea49629c-6fbf-423d-b75b-3e51bed6c3ca%26entityType%3Dcollection%26workspaceId%3Df3d6aad4-30d0-4b94-8262-abe60a8510c2
